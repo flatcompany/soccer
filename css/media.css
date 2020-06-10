@@ -1,0 +1,74 @@
+@media (max-width: 1201px) {
+    .parallax-container {
+        height: 1050px !important;
+    }
+
+    .wrapper-table {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .game-wrapper {
+        height: 200px;
+        padding: 0 20px;
+    }
+
+    .lt-img-team {
+        padding: 10px 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rt-img-team {
+        padding: 10px 0;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .lt-past-img {
+        padding-bottom: 10px;
+    }
+
+    .rt-past-img {
+        padding-bottom: 10px;
+    }
+
+    .lt-past-team h5 {
+        font-size: 20px;
+    }
+    
+    .rt-past-team h5 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 530px) {
+    .lt-name, .rt-name, .location-city, .location-court {
+        font-size: 10px;
+    }
+
+    .lt-name {
+        padding-left: 20px;
+    }
+
+    .rt-name {
+        padding-right: 20px;
+    }
+
+    .preview-time {
+        font-size: 24px;
+    }
+
+    .preview-team {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+

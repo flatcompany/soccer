@@ -1,0 +1,1 @@
+ GS.Widgets.ChampStandings("gs_widget_cf37", {mode: "1", width: 450, widthUnits: "px", height: 300, title: "Чемпионат г. Таганрога по мини-футболу. Третья-четвертая лига.", color1: "910d91", color2: "transparent", color3: "000000", color4: "000000", textSize: 11, font: "roboto", clubLogos: 1, hideMatchCol: 0, additionally: "", watermark: 0}, "gchampionship_season:1036652");

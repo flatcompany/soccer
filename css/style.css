@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #222;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+  }
+  #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #9370DB;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+  }
+  #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #BA55D3;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+  }
+  #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FF00FF;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+
+
+
+.brand-logo {
+    display: flex !important;
+}
+
+.sidenav-trigger {
+    position: absolute !important;
+}
+
+.sidenav {
+    width: 150px !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+nav {
+    position: fixed !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    height: 120px !important;
+    width: 100% !important;
+    position: absolute !important;
+    z-index: 100 !important;
+    animation-delay: 2s !important;
+}
+
+nav .sidenav-trigger {
+    margin-top: 20px !important;
+}
+
+.logo {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.team-name {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.team-name a {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.nav-items {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link {
+font-size: 16px;
+line-height: 13px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.nav-link a {
+    padding: 20px 5px;
+}
+
+.nav-link a:hover {
+    background-color: #A50303;
+}
+
+.parallax-container {
+    height: 100vh !important;
+}
+
+.layout {
+    height: 100% !important;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.preview {
+    position: relative;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 2s;
+}
+
+.preview-bg {
+    position: relative;
+    display: flex;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.preview-date {
+    font-size: 18px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.preview-time {
+    padding: 20px 0;
+    font-size: 54px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.preview-team {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.team-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 50%;
+    height: 60px;
+    background: #A50303;  
+    left: -30px;  
+    transform: skew(-45deg);
+}
+
+.team-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 50%;
+    height: 60px;
+    background: #A50303;  
+    right: -30px;  
+    transform: skew(-45deg);
+}
+
+.lt-name {
+    font-size: 18px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+    transform: skew(45deg);
+}
+
+.rt-name {
+    font-size: 18px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+    transform: skew(45deg);
+}
+
+.preview-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-court {
+    font-size: 18px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+}
+
+.location-city {
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+}
+
+.wrapper-table {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.club {
+    text-align: center;
+}
+
+.club-link {
+   text-decoration: none;
+   color: #fff;
+   pointer-events: none;
+    cursor: default;  
+}
+
+.club-number {
+    background-color: transparent !important;
+}
+
+
+/* Прошедшие матчи */
+
+.section-game {
+    width: 100%;
+    height: 100vh;
+    background-color: #0E2437;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center; 
+    width: 100%;
+    height: 150px;
+    /* background-color: rgba(205, 205, 205, 0.8); */
+    /* border-top: solid 2px #eeee; */
+    border-bottom: solid 2px #eeee;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    padding: 0 50px;
+}
+
+.lt-img-team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 100%;
+}
+
+.rt-img-team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 100%;
+}
+
+.past-score {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.lt-past-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rt-past-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.lt-past-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.rt-past-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.lt-past-score {
+    font-size: 48px;
+}
+
+.rt-past-score {
+    font-size: 48px;
+}
+
+.past_date_time {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 110px;
+    padding-right: 10px;
+    /* border-right: 2px solid #fff; */
+}
+
+.delimeter {
+    padding: 0 10px;
+    font-size: 42px;
+}
+
+.past-time {
+    font-size: 24px;
+}
+
+.past-date {
+    font-size: 18px;
+}
+
+.lt-past-team {
+    padding: 0 20px;
+}
+
+.rt-past-team {
+    padding: 0 20px;
+}
+
+.lt-past-team h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.rt-past-team h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Прошедшие матчи */
+
+
+
+
+/* Админ панель */
+
+.admin  {
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #6F9FD8;
+}
+
+.list {
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 20px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.last-match {
+    padding-top: 50px;
+}
+
+.last-match h6{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.btn-send-match {
+    width: 100%;
+}
+
+/* Админ панель */
